@@ -1,0 +1,16 @@
+{
+  "name": "FindEC2Address",
+  "version": "0.0.0",
+  "description": "Locate your EC2 ip address using instance name",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "aws",
+    "ec2",
+    "console"
+  ],
+  "author": "Jeong, Heon (blmarket@gmail.com)",
+  "license": "BSD-2-Clause"
+}
