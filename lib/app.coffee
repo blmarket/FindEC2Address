@@ -3,7 +3,7 @@ fs = require 'fs'
 {ArgumentParser, RawDescriptionHelpFormatter} = require 'argparse'
 AWS = require 'aws-sdk'
 
-CONFIG_PATH = './config.json'
+CONFIG_PATH = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.aws.credentials.json'
 
 PROGRAM_DESCRIPTION = """
 resolve ec2 instance address via its name tag
