@@ -2,10 +2,13 @@
   "name": "FindEC2Address",
   "version": "0.0.0",
   "description": "Locate your EC2 ip address using instance name",
-  "main": "index.coffee",
+  "bin": {
+    "findec2": "./index.coffee"
+  },
   "scripts": {
     "test": "mocha"
   },
+  "preferGlobal": "true",
   "keywords": [
     "aws",
     "ec2",
