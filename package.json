@@ -1,6 +1,6 @@
 {
   "name": "FindEC2Address",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Locate your EC2 ip address using instance name",
   "bin": {
     "findec2": "./index.coffee"
