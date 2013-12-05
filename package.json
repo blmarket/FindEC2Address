@@ -14,6 +14,7 @@
   "author": "Jeong, Heon (blmarket@gmail.com)",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "argparse": "~0.1.15"
+    "argparse": "~0.1.15",
+    "aws-sdk": "~1.13.0"
   }
 }
