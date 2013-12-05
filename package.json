@@ -12,5 +12,8 @@
     "console"
   ],
   "author": "Jeong, Heon (blmarket@gmail.com)",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "argparse": "~0.1.15"
+  }
 }
