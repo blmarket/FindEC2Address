@@ -1,23 +1,23 @@
 fs = require 'fs'
 
-{ArgumentParser} = require 'argparse'
+{ArgumentParser, RawDescriptionHelpFormatter} = require 'argparse'
 AWS = require 'aws-sdk'
 
 CONFIG_PATH = './config.json'
 
-PROGRAM_DESCRIPTION = '''
+PROGRAM_DESCRIPTION = """
 resolve ec2 instance address via its name tag
 
-If you wanna set your credential info using JSON file, make config.json and fill contents like below.
+If you wanna set your credential info using JSON file, make config.json and fill contents like below,
+That credential info will directly passes into AWS Node.js SDK
 
 { "accessKeyId": "--yours--", "secretAccessKey": "--yours--", "region": "--yours--" }
-
-This configuration will directly passes into AWS Node.js SDK
-'''
+"""
 
 parser = new ArgumentParser({
   addHelp: true
   description: PROGRAM_DESCRIPTION
+  formatterClass: RawDescriptionHelpFormatter
 })
 
 parser.addArgument(
