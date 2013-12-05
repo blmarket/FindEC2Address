@@ -7,6 +7,12 @@ CONFIG_PATH = './config.json'
 
 PROGRAM_DESCRIPTION = '''
 resolve ec2 instance address via its name tag
+
+If you wanna set your credential info using JSON file, make config.json and fill contents like below.
+
+{ "accessKeyId": "--yours--", "secretAccessKey": "--yours--", "region": "--yours--" }
+
+This configuration will directly passes into AWS Node.js SDK
 '''
 
 parser = new ArgumentParser({
