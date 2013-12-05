@@ -8,7 +8,7 @@ CONFIG_PATH = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFI
 PROGRAM_DESCRIPTION = """
 resolve ec2 instance address via its name tag
 
-If you wanna set your credential info using JSON file, make config.json and fill contents like below,
+If you wanna set your credential info using JSON file, make ~/.aws.credentials.json and fill contents like below,
 That credential info will directly passes into AWS Node.js SDK
 
 { "accessKeyId": "--yours--", "secretAccessKey": "--yours--", "region": "--yours--" }
